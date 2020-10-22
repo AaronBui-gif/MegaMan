@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<AnchorPane prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OptionView">
+   <stylesheets>
+      <URL value= "@/resources/css/Options.css"></URL>
+   </stylesheets>
+   <children>
+      <StackPane layoutX="77.0" layoutY="-6.0" prefHeight="512.0" prefWidth="446.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="77.0" prefWidth="446.0">
+                     <children>
+                        <Label prefHeight="95.0" prefWidth="554.0" text="                                                                          SETTING" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="446.0">
+                     <children>
+                        <Label prefHeight="78.0" prefWidth="180.0" text="                          Volume" />
+                        <Slider fx:id="volumeSlider" prefHeight="86.0" prefWidth="277.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="104.0" prefWidth="178.0" text="                      Brightness" />
+                        <Slider fx:id="brightnessSlider" prefHeight="115.0" prefWidth="283.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="SpecialWeaponLabel" prefHeight="100.0" prefWidth="454.0" onMouseClicked="#weaponLabel" text="Special Weapon Shortcut" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
