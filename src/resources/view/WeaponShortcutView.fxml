@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<AnchorPane prefHeight="534.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WeaponShortcutView">
+    <stylesheets>
+        <URL value= "@/resources/css/WeaponShortcut.css"></URL>
+    </stylesheets>
+   <children>
+      <StackPane prefHeight="607.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="moveForward" prefHeight="108.0" prefWidth="273.0" text="                                    Move Forward" />
+                        <Label fx:id="rightArrow" prefHeight="127.0" prefWidth="347.0" text="                                                   Right Arrow" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="240.0">
+                     <children>
+                        <Label fx:id="moveBackward" prefHeight="108.0" prefWidth="273.0" text="                                    Move Backward" />
+                        <Label fx:id="leftArrow" prefHeight="127.0" prefWidth="347.0" text="                                                   Left Arrow" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
