@@ -1,3 +1,7 @@
 #anchorMain {
-    -fx-background-image: url("/resources/images/MegaManMainScreen.jpg");
+    -fx-background-image: url("/resources/images/mega-man-11-switch-hero.jpg");
+}
+
+#imageMainScreen{
+    -fx-background-image: url("/resources/images/mega-man-11-switch-hero.jpg");
 }

@@ -14,6 +14,16 @@ import java.io.IOException;
 public class OptionView {
 
     // Declare variables for FXML
+    @FXML private Label labelSpace;
+    @FXML private Label labelShoot;
+    @FXML private Label labelDownArrow;
+    @FXML private Label labelMovingDown;
+    @FXML private Label labelUpArrow;
+    @FXML private Label labelJump;
+    @FXML private Label labelRightArrow;
+    @FXML private Label labelMovingLeft;
+    @FXML private Label labelLeftArrow;
+    @FXML private Label labelMovingRight;
     @FXML private Label labelControls;
     @FXML private Label labelBrightness;
     @FXML private Label labelAudio;

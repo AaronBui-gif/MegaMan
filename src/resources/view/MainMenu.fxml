@@ -12,7 +12,7 @@
       <Button fx:id="btnNewGame" layoutX="333.0" layoutY="275.0" mnemonicParsing="false" onAction="#setNewGame" prefHeight="27.0" prefWidth="107.0" text="NEW GAME" />
       <Button fx:id="btnLoadGame" layoutX="333.0" layoutY="325.0" mnemonicParsing="false" onAction="#setLoadGame" prefHeight="27.0" prefWidth="107.0" text="LOAD GAME" />
       <Button fx:id="btnOptions" layoutX="333.0" layoutY="382.0" mnemonicParsing="false" onAction="#setOptions" prefHeight="27.0" prefWidth="107.0" text="OPTIONS" />
-      <Button layoutX="333.0" layoutY="436.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="107.0" text="QUIT" />
+      <Button fx:id="quitButton" layoutX="333.0" layoutY="436.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="107.0" text="QUIT" />
       <Label fx:id="labelMenu" layoutX="333.0" layoutY="239.0" prefHeight="17.0" prefWidth="107.0" text="           -MENU-" />
    </children>
 </AnchorPane>

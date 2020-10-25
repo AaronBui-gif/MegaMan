@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OptionView">
+<AnchorPane prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OptionView">
    <stylesheets>
       <URL value="@/resources/css/Options.css" />
    </stylesheets>
@@ -16,13 +13,13 @@
          <children>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label fx:id="labelControls" prefHeight="46.0" prefWidth="267.0" onMouseClicked="#controlsLabel" text="                               Controls" />
-                  <Label fx:id="labelBrightness" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#brightnessLabel" text="                              Brightness" />
-                  <Label fx:id="labelAudio" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#audioLabel" text="                                 Audio" />
-                  <Label fx:id="labelVibration" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#vibrationLabel" text="                              Vibration" />
-                  <Label fx:id="SpecialWeaponLabel" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#weaponLabel" text="                  Special Weapon Shortcut" />
-                  <Label fx:id="stageSelectLabel" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#stageSelectAction" text="                           Stage Select" />
-                  <Label fx:id="labelExit" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#exitAction" text="                                   Exit" />
+                  <Label fx:id="labelControls" onMouseClicked="#controlsLabel" prefHeight="46.0" prefWidth="267.0" text="                               Controls" />
+                  <Label fx:id="labelBrightness" onMouseClicked="#brightnessLabel" prefHeight="50.0" prefWidth="257.0" text="                              Brightness" />
+                  <Label fx:id="labelAudio" onMouseClicked="#audioLabel" prefHeight="50.0" prefWidth="257.0" text="                                 Audio" />
+                  <Label fx:id="labelVibration" onMouseClicked="#vibrationLabel" prefHeight="50.0" prefWidth="257.0" text="                              Vibration" />
+                  <Label fx:id="SpecialWeaponLabel" onMouseClicked="#weaponLabel" prefHeight="50.0" prefWidth="257.0" text="                  Special Weapon Shortcut" />
+                  <Label fx:id="stageSelectLabel" onMouseClicked="#stageSelectAction" prefHeight="50.0" prefWidth="257.0" text="                           Stage Select" />
+                  <Label fx:id="labelExit" onMouseClicked="#exitAction" prefHeight="50.0" prefWidth="257.0" text="                                   Exit" />
                </children>
             </VBox>
          </children>
@@ -33,30 +30,30 @@
                <children>
                   <HBox prefHeight="37.0" prefWidth="250.0">
                      <children>
-                        <Label prefHeight="40.0" prefWidth="125.0" text="Moving Right" />
-                        <Label prefHeight="40.0" prefWidth="125.0" text="Left Arrow" />
+                        <Label fx:id="labelMovingRight" prefHeight="40.0" prefWidth="125.0" text="Moving Right" />
+                        <Label fx:id="labelLeftArrow" prefHeight="40.0" prefWidth="125.0" text="Left Arrow" />
                      </children>
                   </HBox>
                   <HBox prefHeight="37.0" prefWidth="250.0">
                      <children>
-                        <Label prefHeight="40.0" prefWidth="125.0" text="Moving Left" />
-                        <Label prefHeight="35.0" prefWidth="130.0" text="Right Arrow" />
+                        <Label fx:id="labelMovingLeft" prefHeight="40.0" prefWidth="125.0" text="Moving Left" />
+                        <Label fx:id="labelRightArrow" prefHeight="35.0" prefWidth="130.0" text="Right Arrow" />
                      </children>
                   </HBox>
                   <HBox prefHeight="37.0" prefWidth="250.0">
                      <children>
-                        <Label prefHeight="40.0" prefWidth="125.0" text="Jump" />
-                        <Label prefHeight="36.0" prefWidth="138.0" text=" Up Arrow" />
+                        <Label fx:id="labelJump" prefHeight="40.0" prefWidth="125.0" text="Jump" />
+                        <Label fx:id="labelUpArrow" prefHeight="36.0" prefWidth="138.0" text=" Up Arrow" />
                      </children></HBox>
                   <HBox prefHeight="37.0" prefWidth="250.0">
                      <children>
-                        <Label prefHeight="40.0" prefWidth="125.0" text="Moving Down" />
-                        <Label prefHeight="43.0" prefWidth="127.0" text="Down Arrow" />
+                        <Label fx:id="labelMovingDown" prefHeight="40.0" prefWidth="125.0" text="Moving Down" />
+                        <Label fx:id="labelDownArrow" prefHeight="43.0" prefWidth="127.0" text="Down Arrow" />
                      </children></HBox>
                   <HBox prefHeight="37.0" prefWidth="250.0">
                      <children>
-                        <Label prefHeight="38.0" prefWidth="125.0" text="Shoot" />
-                        <Label prefHeight="40.0" prefWidth="138.0" />
+                        <Label fx:id="labelShoot" prefHeight="38.0" prefWidth="125.0" text="Shoot" />
+                        <Label fx:id="labelSpace" prefHeight="40.0" prefWidth="138.0" text="Space" />
                      </children></HBox>
                   <HBox prefHeight="37.0" prefWidth="250.0" />
                   <HBox prefHeight="37.0" prefWidth="250.0" />

@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MainMenu {
+    @FXML private Button quitButton;
     @FXML private Label labelMenu;
     @FXML private Button btnNewGame;
     @FXML private Button btnLoadGame;
@@ -34,24 +35,11 @@ public class MainMenu {
     }
 
     public void setLoadGame(ActionEvent actionEvent) {
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/GameScreen.fxml"));
-//
-//        Parent root = fxmlLoader.load();
-//        Stage newStage = new Stage();
-//        newStage.setScene(new Scene(root, 300, 300));
-//        newStage.setTitle("Mega Man");
-//        newStage.initOwner(stage);
-//
-////        newStage.getIcons().add(icon);
-//
-//
-//        GameScreen gameScreenController = fxmlLoader.getController();
-//        gameScreenController.init(newStage, mainMenu); // initialize the scene
-//
-//
-//        newStage.initModality(Modality.APPLICATION_MODAL);
-//        newStage.setResizable(false);
-//        newStage.showAndWait();
+//        stage = (Stage) btnNewGame.getScene().getWindow();
+//        root = FXMLLoader.load(getClass().getResource("GameScreen.fxml"));
+//        Scene scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
     }
 
     public void setOptions(ActionEvent actionEvent) throws IOException {
@@ -60,5 +48,10 @@ public class MainMenu {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    public void init() {
+        quitButton = new Button();
     }
 }
