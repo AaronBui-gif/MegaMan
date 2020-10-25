@@ -16,13 +16,13 @@
          <children>
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label prefHeight="46.0" prefWidth="267.0" text="                               Controls" />
-                  <Label prefHeight="50.0" prefWidth="257.0" text="                              Brightness" />
-                  <Label prefHeight="50.0" prefWidth="257.0" text="                                 Audio" />
-                  <Label prefHeight="50.0" prefWidth="257.0" text="                              Vibration" />
-                  <Label prefHeight="50.0" prefWidth="257.0" text="                  Special Weapon Shortcut" />
-                  <Label prefHeight="50.0" prefWidth="257.0" text="                           Stage Select" />
-                  <Label prefHeight="50.0" prefWidth="257.0" text="                                   Exit" />
+                  <Label fx:id="labelControls" prefHeight="46.0" prefWidth="267.0" onMouseClicked="#controlsLabel" text="                               Controls" />
+                  <Label fx:id="labelBrightness" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#brightnessLabel" text="                              Brightness" />
+                  <Label fx:id="labelAudio" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#audioLabel" text="                                 Audio" />
+                  <Label fx:id="labelVibration" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#vibrationLabel" text="                              Vibration" />
+                  <Label fx:id="SpecialWeaponLabel" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#weaponLabel" text="                  Special Weapon Shortcut" />
+                  <Label fx:id="stageSelectLabel" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#stageSelectAction" text="                           Stage Select" />
+                  <Label fx:id="labelExit" prefHeight="50.0" prefWidth="257.0" onMouseClicked="#exitAction" text="                                   Exit" />
                </children>
             </VBox>
          </children>
@@ -43,9 +43,21 @@
                         <Label prefHeight="35.0" prefWidth="130.0" text="Right Arrow" />
                      </children>
                   </HBox>
-                  <HBox prefHeight="37.0" prefWidth="250.0" />
-                  <HBox prefHeight="37.0" prefWidth="250.0" />
-                  <HBox prefHeight="37.0" prefWidth="250.0" />
+                  <HBox prefHeight="37.0" prefWidth="250.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="125.0" text="Jump" />
+                        <Label prefHeight="36.0" prefWidth="138.0" text=" Up Arrow" />
+                     </children></HBox>
+                  <HBox prefHeight="37.0" prefWidth="250.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="125.0" text="Moving Down" />
+                        <Label prefHeight="43.0" prefWidth="127.0" text="Down Arrow" />
+                     </children></HBox>
+                  <HBox prefHeight="37.0" prefWidth="250.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="125.0" text="Shoot" />
+                        <Label prefHeight="40.0" prefWidth="138.0" />
+                     </children></HBox>
                   <HBox prefHeight="37.0" prefWidth="250.0" />
                   <HBox prefHeight="37.0" prefWidth="250.0" />
                   <HBox prefHeight="37.0" prefWidth="250.0" />

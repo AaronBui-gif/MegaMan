@@ -9,10 +9,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class GameScreen {
-    private Player player;
-    private Image heroImage;
-    private ImageView hero;
-    private String heroImageLink = "/resources/images/megasprite.png";
+    private final Player player;
+    boolean goRight, goLeft, goUp, goDown, goFast;
+    float dx = 0, dy = 0;
     // Constructor
     public GameScreen(Player player) {
         this.player = player;
@@ -27,8 +26,9 @@ public class GameScreen {
     }
 
     public void start(Stage stage){
-        heroImage = new Image(heroImageLink);
-        hero = new ImageView(heroImage);
+        String heroImageLink = "/resources/images/megasprite.png";
+        Image heroImage = new Image(heroImageLink);
+        ImageView hero = new ImageView(heroImage);
         Group group = new Group(hero);
         group.setManaged(false);
 
@@ -63,5 +63,11 @@ public class GameScreen {
         });
         stage.setScene(scene);
         stage.show();
+
+        if (goDown) dy -= 1;
+        if (goUp) dy += 1;
+        if (goLeft) dx -= 1;
+        if (goRight) dx += 1;
+        if (goFast){ dx *= 3; dy *= 3;}
     }
 }
