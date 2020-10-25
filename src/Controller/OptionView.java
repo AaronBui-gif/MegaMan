@@ -14,9 +14,13 @@ import java.io.IOException;
 public class OptionView {
 
     // Declare variables for FXML
+    @FXML private Label labelControls;
+    @FXML private Label labelBrightness;
+    @FXML private Label labelAudio;
+    @FXML private Label labelVibration;
+    @FXML private Label stageSelectLabel;
+    @FXML private Label labelExit;
     @FXML private Label SpecialWeaponLabel;
-    @FXML private Slider brightnessSlider;
-    @FXML private Slider volumeSlider;
 
 
     // Declare variables
@@ -30,5 +34,24 @@ public class OptionView {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void controlsLabel(MouseEvent mouseEvent) {
+    }
+
+    public void brightnessLabel(MouseEvent mouseEvent) {
+    }
+
+    public void audioLabel(MouseEvent mouseEvent) {
+    }
+
+    public void vibrationLabel(MouseEvent mouseEvent) {
+    }
+
+    public void stageSelectAction(MouseEvent mouseEvent) {
+    }
+
+    public void exitAction(MouseEvent mouseEvent) {
+        System.exit(0);
     }
 }

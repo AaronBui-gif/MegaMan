@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
+<?import java.net.URL?>
 <AnchorPane fx:id="anchorMain" prefHeight="477.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainScreen">
-
+   <stylesheets>
+      <URL value = "@/resources/css/Main.css"></URL>
+   </stylesheets>
+   <children>
+      <ImageView fx:id="imageMainScreen" fitHeight="478.0" fitWidth="766.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
 </AnchorPane>
